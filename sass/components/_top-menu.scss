@@ -14,6 +14,10 @@
   filter: invert(0.5);
 }
 
+.top-menu-button:hover {
+  background: #e3e3e3;
+}
+
 .quit {
   position: relative;
   height: 60px;
@@ -86,7 +90,7 @@
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 767px) {
   .top-menu {
     position: fixed;
     bottom: 0;
@@ -94,25 +98,33 @@
     justify-content: flex-end;
   }
 
-  .quit, .notification, .profile, .wallet {
+  .top-menu-button p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .quit,
+  .notification,
+  .profile,
+  .wallet {
     right: 0;
     height: 60px;
     min-width: 60px;
 
     img {
       max-height: 18px;
-    &:not(:first-of-type) {
-      display: none;
+      &:not(:first-of-type) {
+        display: none;
       }
     }
   }
 
   .wallet {
-    width: 124px;;
+    width: 124px;
   }
 
   p {
     font-size: 13px;
   }
-
 }

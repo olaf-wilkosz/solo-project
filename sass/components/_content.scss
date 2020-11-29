@@ -1,8 +1,3 @@
-.container-fluid div {
-  border: solid 1px #e3e3e3;
-  padding: 15px;
-}
-
 .content {
   padding-top: 18px;
 }
@@ -22,17 +17,23 @@
   font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
+  border: solid 1px #e3e3e3;
+  padding: 15px;
 }
 
 .dates {
   height: 110px;
+  border: solid 1px #e3e3e3;
+  padding: 15px;
 }
 
-.chart {
+.graph {
   height: 640px;
+  border: solid 1px #e3e3e3;
+  padding: 15px;
 }
 
-@media (max-width: 720px){
+@media (max-width: 768px){
   .content {
     padding-top: 0;
   }
@@ -40,6 +41,7 @@
   .wrapper:first-of-type {
     margin-top: 0;
   }
+
   .wrapper:last-of-type {
     div:first-child {
       margin-bottom: 78px;

@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Solo project</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
   <link rel="stylesheet" href="css/style.css">
@@ -10,62 +11,113 @@
 
 <body>
   <div class="dashboard">
-    <div class="logo">
-      <img src="images/logo.svg" alt="logo" title="Just do it">
+    <div class="row">
+      <div class="side-navigation">
+        <div class="logo">
+          <img src="images/logo.svg" alt="logo" title="Just do it">
+          <div>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <ul class="side-nav">
+          <li class="side-nav__button--active">
+            <div class="side-nav__button-svg--active">
+              <img src="images/icons/general.svg" alt="star" title="general" width="20px" height="16px">
+            </div>
+            <div class="side-nav__button-text--active">General</div>
+          </li>
+          <li class="side-nav__button">
+            <div class="side-nav__button-svg">
+              <img src="images/icons/details.svg"" alt=" star" title="details" width="14px" height="13px">
+            </div>
+            <div class="side-nav__button-text">Details</div>
+          </li>
+          <li class="side-nav__button">
+            <div class="side-nav__button-svg">
+              <img src="images/icons/links.svg" alt="star" title="links" width="18px" height="20px">
+            </div>
+            <div class="side-nav__button-text">Links</div>
+          </li>
+          <li class="side-nav__button">
+            <div class="side-nav__button-svg">
+              <img src="images/icons/banners.svg" alt="star" title="banners" width="14px" height="13px">
+            </div>
+            <div class="side-nav__button-text">Banners</div>
+          </li>
+          <li class="side-nav__button">
+            <div class="side-nav__button-svg">
+              <img src="images/icons/personaldata.svg" alt="star" title="personal-data" width="9px" height="14px">
+            </div>
+            <div class="side-nav__button-text">Personal data</div>
+          </li>
+          <li class="side-nav__button">
+            <div class="side-nav__button-svg">
+              <img src="images/icons/payout.svg" alt="star" title="payout" width="13px" height="13px">
+            </div>
+            <div class="side-nav__button-text">Payout</div>
+          </li>
+          <li class="side-nav__button">
+            <div class="side-nav__button-svg">
+              <img src="images/icons/postback.svg" alt="star" title="postback" width="13px" height="15px">
+            </div>
+            <div class="side-nav__button-text">Postback</div>
+          </li>
+        </ul>
+        <div class="contacts">
+          <div>
+            <h4>YOUR MANAGER</h4>
+            <div class="contact">
+              <img src="images/icons/profile.svg">
+              <div class="contact-active"></div>
+              <p>Mikhael E.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-wrapper">
+        <div class="top-menu">
+          <div class="quit">
+            <img src="images/icons/quit.svg" alt="quit" title="Quit">
+          </div>
+          <div class="profile">
+            <img src="images/icons/profile.svg" alt="profile" title="Profile">
+            <p>Leonardo Dicaprio</p>
+          </div>
+          <div class="notification">
+            <div class="notification-active"></div>
+            <img src="images/icons/notification.svg" alt="notification" title="Notification">
+          </div>
+          <div class="wallet">
+            <img src="images/icons/wallet.svg" alt="wallet" title="Wallet">
+            <p>$1,500.00</p>
+            <img src="images/icons/arrow-down.svg" alt="expand" title="Expand Wallet">
+          </div>
+        </div>
+        <div class="content">
+          <div class="wrapper">
+            <div class="general">
+              <section class="container-fluid">
+                <div class="header">GENERAL STATISTIC</div>
+                <div class="dates"></div>
+                <div class="chart"></div>
+              </section>
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="links">
+              <section class="container-fluid">
+                <div class="header">LINKS</div>
+                <div class="chart"></div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="top">top</div>
-    <div class="side-nav">
-      <div class="side-nav__button--active">
-        <div class="side-nav__button-tracker--active"></div>
-        <img src="images/icons/general.svg" alt="star" title="general" class="side-nav__button-svg--active" width="18px"
-          height="18px">
-        <div class="side-nav__button-text">General</div>
-      </div>
-      <div class="side-nav__button">
-        <div class="side-nav__button-tracker"></div>
-        <img src="images/icons/details.svg"" alt=" star" title="details" class="side-nav__button-svg" width="14px"
-          height="13px">
-        <div class="side-nav__button-text">Details</div>
-      </div>
-      <div class="side-nav__button">
-        <div class="side-nav__button-tracker"></div>
-        <img src="images/icons/links.svg" alt="star" title="links" class="side-nav__button-svg" width="16px"
-          height="18px">
-        <div class="side-nav__button-text">Links</div>
-      </div>
-      <div class="side-nav__button">
-        <div class="side-nav__button-tracker"></div>
-        <img src="images/icons/banners.svg" alt="star" title="banners" class="side-nav__button-svg" width="14px"
-          height="13px">
-        <div class="side-nav__button-text">Banners</div>
-      </div>
-      <div class="side-nav__button">
-        <div class="side-nav__button-tracker"></div>
-        <img src="images/icons/personaldata.svg" alt="star" title="personal-data" class="side-nav__button-svg"
-          width="9px" height="14px">
-        <div class="side-nav__button-text">Personal data</div>
-      </div>
-      <div class="side-nav__button">
-        <div class="side-nav__button-tracker"></div>
-        <img src="images/icons/payout.svg" alt="star" title="payout" class="side-nav__button-svg" width="13px"
-          height="13px">
-        <div class="side-nav__button-text">Payout</div>
-      </div>
-      <div class="side-nav__button">
-        <div class="side-nav__button-tracker"></div>
-        <img src="images/icons/postback.svg" alt="star" title="postback" class="side-nav__button-svg" width="13px"
-          height="15px">
-        <div class="side-nav__button-text">Postback</div>
-      </div>
-    </div>
-    <div class="messanger">
-      <div>
-        <h4>YOUR MANAGER</h4>
-        <img src="images/icons/profile.svg" class="side-nav__button-svg" width="44px" height="44px">
-      </div>
-    </div>
-    <div class="content">content</div>
   </div>
+
 </body>
 
 </html>

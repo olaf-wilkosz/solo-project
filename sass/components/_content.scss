@@ -1,0 +1,48 @@
+.container-fluid div {
+  border: solid 1px #e3e3e3;
+  padding: 15px;
+}
+
+.content {
+  padding-top: 18px;
+}
+
+.wrapper {
+  border: none;
+
+  &:first-of-type {
+    margin-top: 60px;
+  }
+}
+
+.header {
+  height: 46px;
+  padding-top: 16px;
+  color: #a6a6a6;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.dates {
+  height: 110px;
+}
+
+.chart {
+  height: 640px;
+}
+
+@media (max-width: 720px){
+  .content {
+    padding-top: 0;
+  }
+
+  .wrapper:first-of-type {
+    margin-top: 0;
+  }
+  .wrapper:last-of-type {
+    div:first-child {
+      margin-bottom: 78px;
+    }
+  }
+}

@@ -1,5 +1,6 @@
 .top-menu {
   position: fixed;
+  right: 0;
   height: 60px;
   width: 100%;
   border: 1px solid #e3e3e3;
@@ -89,7 +90,7 @@
   .top-menu {
     position: fixed;
     bottom: 0;
-    // flex-direction: row;
+    z-index: 1;
     justify-content: flex-end;
   }
 

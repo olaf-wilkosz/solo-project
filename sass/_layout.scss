@@ -40,6 +40,7 @@ body {
   height: 100vh;
   width: 188px;
   background-color: #191919;
+  z-index: 1;
 }
 
 .content-wrapper {
@@ -98,7 +99,11 @@ body {
     margin-left: 55px;
   }
 
-  // .content-wrapper div:first-child {
-  //   order: 1;
-  // }
+  .content {
+    padding-top: 0;
+  }
+
+  .wrapper:first-of-type {
+    margin-top: 0;
+  }
 }

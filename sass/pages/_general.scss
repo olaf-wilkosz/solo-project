@@ -45,7 +45,8 @@
 
   img {
     width: 65%;
-    height: 65%;
+    max-width: 655px;
+    height: auto;
     display: block;
     margin: 0 auto;
   }

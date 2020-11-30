@@ -5,13 +5,13 @@
 @import 'layout';
 
 /* Components */
-@import 'components/side-nav';
-@import 'components/top-menu';
-@import 'components/content';
 @import 'components/button';
+@import 'components/header';
 
 // /* Sections */
-// @import 'section/registration_form';
+@import 'sections/sidebar';
+@import 'sections/topbar';
+@import 'sections/main-content';
 
 /* Pages / Views */
 @import 'pages/links';

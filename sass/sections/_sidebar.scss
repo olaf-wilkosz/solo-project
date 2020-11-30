@@ -1,3 +1,13 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 188px;
+  background-color: #191919;
+  z-index: 1;
+}
+
 .logo {
   display: inline-flex;
   justify-content: space-between;
@@ -36,7 +46,8 @@ span {
   background-color: #191919;
 }
 
-.side-nav__button--active, .side-nav__button:hover {
+.side-nav__button--active,
+.side-nav__button:hover {
   border-left: 4px solid #f58220;
   display: flex;
   font-family: $side-nav-font;
@@ -72,7 +83,7 @@ span {
 }
 
 .side-nav__button-text--active {
-  padding-top: 11px;;
+  padding-top: 11px;
 }
 
 .contacts {
@@ -117,17 +128,27 @@ span {
   height: 44px;
 }
 
-
 @media (max-width: 767px) {
+  .sidebar {
+    width: 55px;
+    height: 100%;
+  }
+
   .logo {
     width: 55px;
   }
 
-  .logo img, .side-nav__button-text, .side-nav__button-text--active, .contacts h4, .contacts p {
+  .logo img,
+  .side-nav__button-text,
+  .side-nav__button-text--active,
+  .contacts h4,
+  .contacts p {
     display: none;
   }
 
-  .side-nav__button, .side-nav__button--active, .side-nav__button:hover {
+  .side-nav__button,
+  .side-nav__button--active,
+  .side-nav__button:hover {
     width: 55px;
   }
 

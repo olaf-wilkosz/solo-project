@@ -42,14 +42,6 @@
   margin: 0 auto;
   padding: 15px;
   display: block;
-
-  img {
-    width: 65%;
-    max-width: 655px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
 }
 
 .summary-table {
@@ -77,4 +69,25 @@
   font-family: Roboto;
   font-size: 16px;
   font-weight: 300;
+}
+
+.summary-chart {
+  display: block;
+  width: 75%;
+  margin: 15px auto;
+
+  .table-cell {
+    padding-top: 30px;
+    padding-bottom: 18px;
+    border: none;
+  }
+
+  img {
+    width: 85%;
+    max-width: 655px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 55px;
+  }
 }

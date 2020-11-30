@@ -395,7 +395,7 @@ body {
   margin-left: 188px;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 767px) {
   .container-fluid {
     width: calc(100%-55px);
   }
@@ -733,18 +733,6 @@ span {
   padding: 15px;
 }
 
-.dates {
-  height: 110px;
-  border: solid 1px #e3e3e3;
-  padding: 15px;
-}
-
-.graph {
-  height: 640px;
-  border: solid 1px #e3e3e3;
-  padding: 15px;
-}
-
 @media (max-width: 768px) {
   .content {
     padding-top: 0;
@@ -781,6 +769,16 @@ span {
   width: 130px;
 }
 
+.button-dates {
+  padding: 12px;
+}
+
+.button-dates img {
+  width: 18px;
+  height: 18px;
+  filter: invert(1);
+}
+
 /* Pages / Views */
 /* Links section */
 .chart {
@@ -803,7 +801,7 @@ span {
   border-bottom: solid 1px #e3e3e3;
   padding: 15px;
   height: 60px;
-  width: 70%;
+  width: 75%;
   margin: 0 15%;
 }
 
@@ -862,5 +860,92 @@ span {
 .link-card-operations-link:hover img,
 .link-card-operations-delete:hover img {
   filter: invert(49%) sepia(99%) saturate(765%) hue-rotate(348deg) brightness(101%) contrast(92%);
+}
+
+.dates {
+  height: 110px;
+  border: solid 1px #e3e3e3;
+  padding: 15px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.date-filter {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin: 0 15px;
+  width: 325px;
+  height: 40px;
+  border-radius: 3px;
+  border: 1px solid #e3e3e3;
+}
+
+.date {
+  margin: 5px;
+  padding: 8px;
+  color: #333333;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.date-end {
+  border-left: 1px solid #e3e3e3;
+}
+
+.date-choice img {
+  width: 13px;
+  height: 13px;
+  filter: invert(63%) sepia(1%) saturate(798%) hue-rotate(34deg) brightness(99%) contrast(90%);
+}
+
+.graph {
+  height: 640px;
+  border: solid 1px #e3e3e3;
+  margin: 0 auto;
+  padding: 15px;
+  display: block;
+}
+
+.graph img {
+  width: 65%;
+  height: 65%;
+  display: block;
+  margin: 0 auto;
+}
+
+.summary-table {
+  width: 75%;
+  margin: 15px auto;
+}
+
+.table-cell {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  width: 40%;
+  border-bottom: 2px solid #e3e3e3;
+  margin: 15px 35px;
+}
+
+.cell-name {
+  color: #a6a6a6;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.cell-value {
+  color: #333333;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
 }
 /*# sourceMappingURL=style.css.map */

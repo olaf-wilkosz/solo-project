@@ -22,4 +22,14 @@
   width: 130px;
 }
 
+.button-dates {
+  padding: 12px;
+}
+
+.button-dates img {
+  width: 18px;
+  height: 18px;
+  filter: invert(1);
+}
+
 /*# sourceMappingURL=button.css.map */

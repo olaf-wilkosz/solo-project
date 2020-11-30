@@ -20,3 +20,12 @@
 .button-links {
   width: 130px;
 }
+
+.button-dates {
+  padding: 12px;
+  img {
+    width: 18px;
+    height: 18px;
+    filter: invert(1);
+  }
+}

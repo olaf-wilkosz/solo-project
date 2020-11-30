@@ -368,6 +368,7 @@ body {
   width: calc(100%-188px);
   margin: 18px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
 }
 
 .row {
@@ -722,6 +723,10 @@ span {
 
 .wrapper:first-of-type {
   margin-top: 60px;
+}
+
+.general, .links {
+  background-color: #f5f5f2;
 }
 
 .header {

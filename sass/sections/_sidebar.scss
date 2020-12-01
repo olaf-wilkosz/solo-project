@@ -150,7 +150,7 @@ span {
   height: 44px;
 }
 
-.sidebar .topbar-mobile {
+.topbar-mobile {
   display: none;
 }
 
@@ -189,6 +189,7 @@ span {
 
   .contacts {
     width: 260px;
+    padding-bottom: 72px;
   }
 
   .contacts img {
@@ -205,16 +206,17 @@ span {
     left: 30px;
   }
 
-  .sidebar .topbar-mobile {
-    display: inline-flex;
+  .bottombar {
+    display: none;
     flex-direction: row-reverse;
     position: fixed;
     bottom: 0;
     border: unset;
     background: #191919;
     border-top: 1px solid #333333;
+    z-index: 2;
 
-    .topbar-button img {
+    .topbar-button img, .wallet img {
       filter: invert(0.5);
       width: 20px;
       height: 20px;
@@ -228,7 +230,10 @@ span {
       width: 65px;
       padding: 5% auto;
       border: none;
+
+      &:not(:first-of-type) {
       border-right: 1px solid #333333;
+      }
     }
   }
 }

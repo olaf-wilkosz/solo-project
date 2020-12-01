@@ -8,6 +8,8 @@
   transition: transform 0.3s ease-in-out;
   z-index: 2;
   transform: translateX(0);
+  overflow: auto;
+  overflow-x: hidden;
 
   &.is-active {
     transform: translateX(0);
@@ -24,7 +26,17 @@
 }
 
 .hamburger {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: #191919;
+  border: none;
+  top: 0;
+  left: 128px;
+  cursor: pointer;
+  padding: 16px;
   display: block;
+  z-index: 2;
 }
 
 span {
@@ -147,6 +159,8 @@ span {
     height: 100%;
     width: 260px;
     transform: translateX(-100%);
+    overflow: unset;
+    overflow-y: auto;
   }
 
   .logo {
@@ -160,11 +174,10 @@ span {
     background: #191919;
     border: none;
     top: 0;
-    right: 0;
+    left: 0;
     cursor: pointer;
     padding: 16px;
     display: block;
-    right: -60px;
   }
 
   .side-nav__button,

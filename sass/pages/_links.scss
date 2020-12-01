@@ -18,6 +18,7 @@
   padding: 15px;
   height: 60px;
   width: 60%;
+  min-width: 320px;
   margin: 0 20%;
 }
 
@@ -27,14 +28,22 @@
 
 .link-card-title {
   width: 45%;
+  min-width: 120px;
   color: #a6a6a6;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .link-card-address {
   width: 45%;
+  min-width: 120px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   a {
     text-decoration: none;
@@ -49,6 +58,8 @@
   display: none;
   position: relative;
   justify-content: flex-end;
+  min-width: 60px;
+  z-index: 0;
 }
 
 .link-card-operations-link,

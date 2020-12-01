@@ -9,6 +9,7 @@
   display: flex;
   flex-flow: nowrap row-reverse;
   align-self: flex-end;
+  z-index: 1;
 }
 
 .topbar img {

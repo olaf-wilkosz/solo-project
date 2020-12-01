@@ -2,10 +2,16 @@
   position: fixed;
   top: 0;
   left: 0;
-  height: 100vh;
   width: 188px;
+  height: 100vh;
   background-color: #191919;
-  z-index: 1;
+  transition: transform 0.3s ease-in-out;
+  z-index: 2;
+  transform: translateX(0);
+
+  &.is-active {
+    transform: translateX(0);
+  }
 }
 
 .logo {
@@ -17,12 +23,18 @@
   width: 188px;
 }
 
+.hamburger {
+  display: block;
+
+  @media (max-width: 767px) {
+  }
+}
+
 span {
   display: block;
   width: 18px;
   height: 2px;
-  margin-top: 5px;
-  right: -2px;
+  margin: 5px auto;
   position: relative;
   background: #999999;
 }
@@ -89,6 +101,7 @@ span {
 .contacts {
   background-color: #191919;
   border-top: 1px solid #333333;
+  width: 188px;
   padding: 6px 20px;
 }
 
@@ -128,32 +141,43 @@ span {
   height: 44px;
 }
 
+.sidebar .topbar-mobile {
+  display: none;
+}
+
 @media (max-width: 767px) {
   .sidebar {
-    width: 55px;
     height: 100%;
+    width: 260px;
+    transform: translateX(-100%);
   }
 
   .logo {
-    width: 55px;
+    width: 260px;
   }
 
-  .logo img,
-  .side-nav__button-text,
-  .side-nav__button-text--active,
-  .contacts h4,
-  .contacts p {
-    display: none;
+  .hamburger {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: #191919;
+    border: none;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    padding: 16px;
+    display: block;
+    right: -60px;
   }
 
   .side-nav__button,
   .side-nav__button--active,
   .side-nav__button:hover {
-    width: 55px;
+    width: 260px;
   }
 
   .contacts {
-    padding: 20px 13px;
+    width: 260px;
   }
 
   .contacts img {
@@ -168,5 +192,29 @@ span {
     border-radius: 50%;
     position: absolute;
     left: 30px;
+  }
+
+  .sidebar .topbar-mobile {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    position: fixed;
+    bottom: 0;
+    border: unset;
+
+    .topbar-button img {
+      filter: invert(0.5);
+      width: 20px;
+      height: 20px;
+    }
+
+    .quit,
+    .profile,
+    .notification,
+    .wallet {
+      height: auto;
+      width: 65px;
+      padding: 5% auto;
+      border: none;
+    }
   }
 }

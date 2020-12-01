@@ -93,39 +93,6 @@
 
 @media (max-width: 767px) {
   .topbar {
-    position: fixed;
-    bottom: 0;
-    z-index: 1;
-    justify-content: flex-end;
-  }
-
-  .topbar-button p {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-
-  .quit,
-  .notification,
-  .profile,
-  .wallet {
-    right: 0;
-    height: 60px;
-    min-width: 60px;
-
-    img {
-      max-height: 18px;
-      &:not(:first-of-type) {
-        display: none;
-      }
-    }
-  }
-
-  .wallet {
-    width: 124px;
-  }
-
-  p {
-    font-size: 13px;
+    display: none;
   }
 }

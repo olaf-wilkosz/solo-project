@@ -28,7 +28,6 @@ hamburger.addEventListener('click', function () {
   }
 });
 
-
 overlay.addEventListener('click', function () {
   sidebar.classList.remove('is-active');
   overlay.classList.remove('is-active');

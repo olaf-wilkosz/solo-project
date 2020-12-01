@@ -30,6 +30,10 @@
   border-left: 1px solid #e3e3e3;
 }
 
+.date-choice-start {
+  display: none;
+}
+
 .date-choice img {
   width: 13px;
   height: 13px;
@@ -89,5 +93,35 @@
     display: block;
     margin: 0 auto;
     padding-bottom: 55px;
+  }
+}
+
+@media (max-width: 767px) {
+  // .dates {
+  //   align-items: unset;
+  // }
+
+  .date-filter {
+    display: block;
+    position: relative;
+    height: 84px;
+  }
+
+  .date-end, .date-start {
+    border: 1px solid #e3e3e3;
+  }
+
+  .date-choice {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    &:last-of-type {
+      top: 40px;
+    }
+  }
+
+  .date-choice-start {
+    display: block;
   }
 }

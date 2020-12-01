@@ -161,6 +161,7 @@ span {
     transform: translateX(-100%);
     overflow: unset;
     overflow-y: auto;
+    margin-bottom: 60px;
   }
 
   .logo {
@@ -178,6 +179,7 @@ span {
     cursor: pointer;
     padding: 16px;
     display: block;
+    transition: transform 0.3s ease-in-out;
   }
 
   .side-nav__button,

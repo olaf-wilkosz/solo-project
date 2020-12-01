@@ -25,9 +25,6 @@
 
 .hamburger {
   display: block;
-
-  @media (max-width: 767px) {
-  }
 }
 
 span {
@@ -145,7 +142,7 @@ span {
   display: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .sidebar {
     height: 100%;
     width: 260px;

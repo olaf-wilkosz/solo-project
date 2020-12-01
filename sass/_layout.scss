@@ -44,9 +44,9 @@ body {
   transition: opacity 0.2s ease-in-out;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .container-fluid {
-    width: calc(100%-55px);
+    width: 100%;
   }
 
   .overlay {

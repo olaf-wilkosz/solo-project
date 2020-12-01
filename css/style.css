@@ -388,7 +388,7 @@ body {
 
 @media (max-width: 1023px) {
   .container-fluid {
-    width: 100%;
+    width: calc(100%-18px);
   }
   .overlay {
     display: block;
@@ -788,7 +788,6 @@ span {
 
 .wrapper {
   border: none;
-  background-color: #ffffff;
 }
 
 .general,
@@ -798,7 +797,6 @@ span {
 
 @media (max-width: 1023px) {
   .main-content {
-    width: 95%;
     right: unset;
     margin: unset;
     padding: unset;
@@ -903,6 +901,31 @@ span {
 .link-card-operations-link:hover img,
 .link-card-operations-delete:hover img {
   filter: invert(49%) sepia(99%) saturate(765%) hue-rotate(348deg) brightness(101%) contrast(92%);
+}
+
+@media (max-width: 767px) {
+  .links-list {
+    padding: 0;
+  }
+  .link-card {
+    display: block;
+    width: 100%;
+    min-width: 200px;
+    height: 80px;
+    margin: 0;
+  }
+  .link-card-title,
+  .link-card-address {
+    width: 100%;
+    text-align: center;
+  }
+  .link-card-operations {
+    width: 100%;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
 }
 
 .dates {

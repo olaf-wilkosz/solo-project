@@ -46,7 +46,7 @@ body {
 
 @media (max-width: 1023px) {
   .container-fluid {
-    width: 100%;
+    width: calc(100%-18px);
   }
 
   .overlay {

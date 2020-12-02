@@ -150,8 +150,17 @@ span {
   height: 44px;
 }
 
-.topbar-mobile {
-  display: none;
+.bottombar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: inline-flex;
+  flex-direction: row-reverse;
+  border: unset;
+  background: #191919;
+  border-top: 1px solid #333333;
+  z-index: 2;
+  transition: transform 0.3s ease-in-out;
 }
 
 @media (max-width: 1023px) {
@@ -207,16 +216,10 @@ span {
   }
 
   .bottombar {
-    display: none;
-    flex-direction: row-reverse;
-    position: fixed;
-    bottom: 0;
-    border: unset;
-    background: #191919;
-    border-top: 1px solid #333333;
-    z-index: 2;
 
-    .topbar-button img, .wallet img {
+
+    .topbar-button img,
+    .wallet img {
       filter: invert(0.5);
       width: 20px;
       height: 20px;
@@ -232,7 +235,7 @@ span {
       border: none;
 
       &:not(:first-of-type) {
-      border-right: 1px solid #333333;
+        border-right: 1px solid #333333;
       }
     }
   }

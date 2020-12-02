@@ -22,7 +22,7 @@ hamburger.addEventListener('click', function () {
   if (window.screen.height <= 1023) {
     if (hamburgerStatus.length == 0) {
       hamburger.setAttribute('style', 'left: 0');
-      bottombar.setAttribute('style', '  transform: translateX(-100%)');
+      bottombar.setAttribute('style', 'transform: translateX(-100%)');
     } else {
       hamburger.setAttribute('style', 'left: 260px');
       bottombar.setAttribute('style', 'transform: translateX(0)');

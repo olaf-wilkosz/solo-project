@@ -154,7 +154,7 @@ span {
   position: fixed;
   bottom: 0;
   left: 0;
-  display: inline-flex;
+  display: none;
   flex-direction: row-reverse;
   border: unset;
   background: #191919;
@@ -216,6 +216,7 @@ span {
   }
 
   .bottombar {
+    display: inline-flex;
     transform: translateX(-100%);
 
     .topbar-button img,
